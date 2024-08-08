@@ -1,0 +1,6 @@
+[submodule "build/x264"]
+	path = build/x264
+	url = https://code.videolan.org/videolan/x264
+[submodule "build/FFmpeg"]
+	path = build/FFmpeg
+	url = https://github.com/FFmpeg/FFmpeg

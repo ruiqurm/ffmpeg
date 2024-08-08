@@ -1,0 +1,14 @@
+prefix=/home/ruiqurm/ffmpeg/build/libdwarf
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+pkgincludedir=${prefix}/include/libdwarf-0
+
+Name: libdwarf
+Description: DWARF debug symbols library
+Version: 0.11.0
+Requires.private: 
+Libs: -L${libdir} -ldwarf
+Libs.private: 
+Cflags: -I${pkgincludedir}
+Cflags.private: -DLIBDWARF_STATIC
