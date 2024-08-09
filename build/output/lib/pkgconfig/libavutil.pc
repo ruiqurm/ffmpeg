@@ -1,0 +1,14 @@
+prefix=/home/ruiqurm/ffmpeg/build/output
+exec_prefix=${prefix}
+libdir=/home/ruiqurm/ffmpeg/build/output/lib
+includedir=/home/ruiqurm/ffmpeg/build/output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.70.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=/home/ruiqurm/ffmpeg/build/output
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: x265
+Description: H.265/HEVC video encoder
+Version: 3.6
+Libs: -L${libdir} -lx265
+Libs.private: -lGL-getprocaddr -lal -lhtml5 -lstubs-debug -lnoexit -lc-debug -ldlmalloc -lcompiler_rt -lc++-noexcept -lc++abi-debug-noexcept -lsockets
+Cflags: -I${includedir}
